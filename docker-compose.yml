@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  soap-calculadora:
+    build: .
+    ports:
+      - "8000:8000"
+    container_name: soap-calculadora
+    volumes:
+      - ./src:/app/src
+    restart: unless-stopped
